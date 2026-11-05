@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- يُستبدل بقيمة --base-href عند البناء. -->
+  <base href="/mazraati/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="مزرعتي: إدارة مزرعة نخيل وبستان">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7b4a21">
+
+  <!-- الآيفون: يعمل كتطبيق مستقل بعد «إضافة إلى الشاشة الرئيسية» -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="مزرعتي">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>مزرعتي</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    /* لون التربة يظهر فوراً قبل أن يكتمل تحميل التطبيق */
+    html, body { margin: 0; background: #ede3cf; }
+    @media (prefers-color-scheme: dark) { html, body { background: #17110d; } }
+  </style>
+</head>
+<body>
+  <script>
+    // العمل بلا إنترنت بعد أول فتح (sw.js يُكتب عند بناء نسخة الآيفون: tool/build_iphone.dart)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

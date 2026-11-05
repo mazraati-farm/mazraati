@@ -1,0 +1,67 @@
+{
+  "note": "السياجات وحديقة الثيل منقولة من كائن HEDGES في reference/sijil-map.html. الإحداثيات بالمتر، والمستطيل [x, y, عرض, ارتفاع].",
+  "hedges": [
+    {
+      "id": "lawn",
+      "kind": "lawn",
+      "name": "حديقة الثيل",
+      "address": "بين قمرية عنب ودار الاستراحة · 10 × 12 م",
+      "note": "الحديقة كلها مزروعة ثيلاً.",
+      "colorToken": "p-lawn",
+      "textToken": "ink",
+      "rects": [[8, 46.4, 10, 12]],
+      "area": 120,
+      "label": {"x": 13.4, "y": 53.1, "rotated": false, "centered": true},
+      "care": [
+        {"id": "lawn-mow-1", "kind": "mow", "months": [4, 5, 6, 7, 8, 9, 10], "everyDays": 7, "note": "قص منتظم كل أسبوع تقريباً"},
+        {"id": "lawn-feed-1", "kind": "feed", "months": [3], "note": "نتروجين"},
+        {"id": "lawn-feed-2", "kind": "feed", "months": [6], "note": "NPK"},
+        {"id": "lawn-feed-3", "kind": "feed", "months": [9], "note": "NPK مع حديد"}
+      ]
+    },
+    {
+      "id": "dodo",
+      "kind": "hedge",
+      "name": "خط الددونيا",
+      "address": "بجانب الخط 3 · من اللالنكي 5 إلى الليمون 15",
+      "note": "يمتد بمحاذاة الشارع بين الخط 4 والخط 3.",
+      "colorToken": "p-dodo",
+      "rects": [[7.8, 13.55, 1, 23.62]],
+      "length": 22.62,
+      "label": {"x": 7.25, "y": 25.36, "rotated": true, "centered": true}
+    },
+    {
+      "id": "carp",
+      "kind": "hedge",
+      "name": "كاربس",
+      "address": "حول الحديقة · ضلع القمرية وضلع الشارع",
+      "note": "سياج على ضلعين فقط من الحديقة: يبدأ من دار الاستراحة على امتداد جهة القمرية، ثم ينعطف على امتداد جهة الشارع.",
+      "colorToken": "p-carp",
+      "rects": [[8, 46.4, 10, 0.9], [8, 46.4, 0.9, 12]],
+      "length": 22,
+      "label": {"x": 9.4, "y": 48.2, "rotated": false, "centered": false}
+    },
+    {
+      "id": "carp2",
+      "kind": "hedge",
+      "name": "خط الكاربس",
+      "address": "مع السياج جهة الخط 1 · من الزيتونة 15 إلى الشط",
+      "note": "سياج نباتي بمحاذاة سياج المزرعة المجاور للخط 1، يبدأ عند الزيتونة 15 وينتهي عند الشط.",
+      "colorToken": "p-carp",
+      "textToken": "raise",
+      "fontSize": 10,
+      "rects": [[23.3, 36.67, 0.45, 67.93]],
+      "length": 67.93
+    },
+    {
+      "id": "carp3",
+      "kind": "hedge",
+      "name": "خط كاربس الخط 4",
+      "address": "مع السياج جهة الخط 4 · من الزيتونة 35 إلى الشط",
+      "note": "سياج نباتي بمحاذاة سياج المزرعة المجاور للخط 4، يبدأ عند الزيتونة 35 وينتهي عند الشط.",
+      "colorToken": "p-carp",
+      "rects": [[0.25, 91.95, 0.45, 12.65]],
+      "length": 12.65
+    }
+  ]
+}
